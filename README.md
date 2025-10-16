@@ -22,6 +22,7 @@ Run the following commands in a notebook cell:
 ```bash
 !pip install requests matplotlib pyinputplus
 !pip install hands-on-ai
+```
 
 ## 🔐 API & Server Configuration
 
@@ -37,6 +38,7 @@ import os
 
 os.environ['HANDS_ON_AI_SERVER'] = 'https://ollama.serveur.au'
 os.environ['HANDS_ON_AI_MODEL'] = 'granite3.2'
+```
 
 ## ▶️ Running the Application
 
@@ -52,6 +54,7 @@ Execute the final cell containing:
 ```python
 if __name__ == "__main__":
     run_app()
+```
 
 ### 🕹️ Follow the Menu
 
