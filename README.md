@@ -2,11 +2,11 @@
 
 ## Subtitle: Harnessing Python and AI to Create Intuitive Weather Applications
 
-| Author | [Your Name Here] |
+| Author | Yeonsu Park |
 | :--- | :--- |
-| Student ID | [Your Student ID Here] |
-| Course | [Your Course Name/Code Here] |
-| Date | [Submission Date Here] |
+| Student ID | 23319734 |
+| Course | ISYS5002 Introduction to Programming |
+| Date | October 19, 2025 |
 
 ---
 ## 💡 Project Overview
