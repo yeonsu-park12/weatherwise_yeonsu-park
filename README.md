@@ -1,63 +1,43 @@
-# 🌦️ WeatherWise Template
+# WeatherWise: Intelligent Weather Analysis & Advisory System
 
-Welcome to the **WeatherWise Assignment Starter Template**! This repository helps you kickstart your project by combining Python, weather APIs, data visualisation, and AI-assisted development. 🤖📊
+## Subtitle: Harnessing Python and AI to Create Intuitive Weather Applications
 
-![Build With AI](https://img.shields.io/badge/Built_with-AI-blueviolet?logo=openai)
-![Python](https://img.shields.io/badge/Made_with-Python-3776AB?logo=python)
-![Visualisation](https://img.shields.io/badge/Includes-Visualisations-orange?logo=plotly)
-
----
-
-## 🚀 How to Use This Template
-
-1. Click **"Use this template"** on GitHub to create your own copy.
-2. Rename your repository to something like `weatherwise-jane-doe`.
-3. Clone it and start developing in `starter_notebook.ipynb`.
+| Author | [Your Name Here] |
+| :--- | :--- |
+| Student ID | [Your Student ID Here] |
+| Course | [Your Course Name/Code Here] |
+| Date | [Submission Date Here] |
 
 ---
+## 💡 Project Overview
 
-## 📁 Folder Structure
+WeatherWise is a comprehensive Python application developed for this programming assignment. It successfully integrates real-time weather data retrieval (using the **wttr.in API**), two distinct **data visualizations** using Matplotlib, and a **natural language processing (NLP) interface** for activity advisory.
 
-- `starter_notebook.ipynb` — Main notebook to build your project.
-- `ASSIGNMENT.md` — Full assignment specification.
-- `ai-conversations/` — Save your `.txt` AI conversations here.
-- `resources/` — Guides, prompting tips, and AI technique examples.
-- `submission/` — Files to help you finalise your submission:
-  - `checklist-md.md` — Submission checklist
-  - `reflection.md` — Write your 300–500 word project reflection
-  - `one-page-summary.md` — (Optional) Your own summary of key ideas or process
+This project's core purpose is to demonstrate **modular design**, robust technical implementation, and the effective use of **intentional prompting techniques** when collaborating with AI tools throughout the development process.
 
 ---
+## ✨ Core Application Features (Required)
 
-📄 **Quick Overview:**  
-A one-page summary of the full assignment is available in [`resources/assignment-summary.md`](resources/assignment-summary.md).
-
----
-
-## 📓 Submission Checklist
-
-✅ Complete all required functions  
-✅ Include at least 5 AI conversations in `ai-conversations/`  
-✅ Document your intentional prompting  
-✅ Fill in your project reflection in `submission/reflection-template.md`  
-✅ Zip your project and upload it to the LMS  
+1.  **Weather Data Component (Standard Option):** * Utilizes the raw `wttr.in` JSON API (`?format=j1`) for data retrieval, meeting the Standard Option requirement.
+    * Provides current conditions and a **3-day forecast** for user-specified locations.
+    * Includes robust error handling for API connection failures and invalid location inputs.
+2.  **Data Visualisation (2 Required):**
+    * **Temperature Trend Chart:** A line plot displaying the average daily temperature (in °C) over the forecast period.
+    * **Precipitation Risk Plot:** A dual-axis plot comparing hourly precipitation (mm) and the chance of rain (%) for a selected day.
+3.  **Natural Language Interface:** * The `parse_weather_question` function uses regex to interpret user queries (e.g., "Is it a good day for running tomorrow?").
+    * The `suggest_activity` function generates natural, weather-aware advice based on calculated average temperature and current weather conditions.
+4.  **User Interface:** Implemented as an intuitive console-based menu system.
 
 ---
+## 🛠️ Setup and Installation
 
-🧠 AI Conversations  
-Save your AI interactions in the `ai-conversations/` folder.  
-See `ai-conversations/how-to-log-ai-conversations.md` for details.
+### Prerequisites
 
+Ensure **Python 3.8+** is installed on your system.
 
---
-## 🧠 Need Help with AI Prompts?
+### Dependencies
 
-Check out:
-Check out:
-- `resources/ai-tips-tricks.md` — Prompting tips and pitfalls
-- `resources/sample-prompting-journey.md` — Full example of AI-enhanced development
-- `resources/prompts-by-method-step.md` — Prompts aligned with the 6-step dev process
-- `resources/before-after-example.md` — Required: Show how your prompting improved AI-generated code
+Install all necessary libraries, including the required UI package:
 
-
-Good luck and have fun! 💡🌤️
+```bash
+pip install requests matplotlib pyinputplus
