@@ -1,43 +1,82 @@
-# WeatherWise: Intelligent Weather Analysis & Advisory System
+WeatherWise: Intelligent Weather Analysis & Advisory System
 
-## Subtitle: Harnessing Python and AI to Create Intuitive Weather Applications
+🌟 Overview
 
-| Author | Yeonsu Park |
-| :--- | :--- |
-| Student ID | 23319734 |
-| Course | ISYS5002 Introduction to Programming |
-| Date | October 19, 2025 |
+WeatherWise is a Python application developed as a final project for the course ISYS5002. It integrates real-time weather data retrieval (via wttr.in), data visualization, and an intelligent conversational AI (using the hands-on-ai framework with the granite3.2 model).
 
----
-## 💡 Project Overview
+The application is structured using modular design principles, allowing users to check current and forecast conditions, view visual data trends, and ask natural language questions to the AI advisor.
 
-WeatherWise is a comprehensive Python application developed for this programming assignment. It successfully integrates real-time weather data retrieval (using the **wttr.in API**), two distinct **data visualizations** using Matplotlib, and a **natural language processing (NLP) interface** for activity advisory.
+🛠️ Setup and Installation
 
-This project's core purpose is to demonstrate **modular design**, robust technical implementation, and the effective use of **intentional prompting techniques** when collaborating with AI tools throughout the development process.
+Prerequisites
 
----
-## ✨ Core Application Features (Required)
+You need a Google Colab or Jupyter environment to run this notebook.
 
-1.  **Weather Data Component (Standard Option):** * Utilizes the raw `wttr.in` JSON API (`?format=j1`) for data retrieval, meeting the Standard Option requirement.
-    * Provides current conditions and a **3-day forecast** for user-specified locations.
-    * Includes robust error handling for API connection failures and invalid location inputs.
-2.  **Data Visualisation (2 Required):**
-    * **Temperature Trend Chart:** A line plot displaying the average daily temperature (in °C) over the forecast period.
-    * **Precipitation Risk Plot:** A dual-axis plot comparing hourly precipitation (mm) and the chance of rain (%) for a selected day.
-3.  **Natural Language Interface:** * The `parse_weather_question` function uses regex to interpret user queries (e.g., "Is it a good day for running tomorrow?").
-    * The `suggest_activity` function generates natural, weather-aware advice based on calculated average temperature and current weather conditions.
-4.  **User Interface:** Implemented as an intuitive console-based menu system.
+Install Dependencies
+The application requires the following Python libraries:
 
----
-## 🛠️ Setup and Installation
+!pip install requests matplotlib pyinputplus
+!pip install hands-on-ai
 
-### Prerequisites
 
-Ensure **Python 3.8+** is installed on your system.
+API Key and Server Configuration
 
-### Dependencies
+This application uses the provided hands-on-ai server for conversational AI and the wttr.in service for weather data (no API key required for wttr.in).
 
-Install all necessary libraries, including the required UI package:
+The following environment variables must be set in the notebook's setup section for the AI to function:
 
-```bash
-pip install requests matplotlib pyinputplus
+os.environ['HANDS_ON_AI_SERVER'] = '[https://ollama.serveur.au](https://ollama.serveur.au)'
+os.environ['HANDS_ON_AI_MODEL'] = 'granite3.2'
+
+
+Running the Application
+
+Open the Notebook: Open the weatherwise_notebook.ipynb file in your preferred environment (e.g., Google Colab).
+
+Execute Setup: Run the initial cells to install packages and configure environment variables.
+
+Run run_app(): Execute the final cell containing the if __name__ == "__main__": run_app() call.
+
+Follow the Menu: Interact with the console-based menu to view charts or ask the AI advisor questions.
+
+✨ Core Features
+
+Weather Data Retrieval: Fetches current and 3-day forecast data for user-specified cities via wttr.in.
+
+Data Visualization:
+
+3-Day Temperature Chart: Line plot showing average temperature trends.
+
+Precipitation Chart: Dual-axis chart showing hourly precipitation (mm) and chance of rain (%).
+
+Intelligent Advisory: Uses the granite3.2 LLM to analyze weather data and provide natural language advice based on user queries.
+
+Intuitive UI: Console menu system implemented using the pyinputplus library for robust input handling.
+
+🧱 Modular Design (Core Functions)
+
+The application is built around the following required core functions, demonstrating the single responsibility principle:
+
+Function Name
+
+Responsibility
+
+get_weather_data(location, forecast_days=5)
+
+Fetches raw weather JSON from wttr.in.
+
+create_temperature_visualisation(weather_data, ...)
+
+Creates and displays the temperature line chart.
+
+create_precipitation_visualisation(weather_data, ...)
+
+Creates and displays the precipitation dual-axis chart.
+
+parse_weather_question(question)
+
+Stores the user question (simple stub for future NLP).
+
+generate_weather_response(parsed_question, weather_data)
+
+Summarizes data and calls the hands-on-ai LLM to generate the final response.
