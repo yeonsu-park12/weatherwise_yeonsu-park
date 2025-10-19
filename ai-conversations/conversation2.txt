@@ -1,7 +1,9 @@
-Convesation2. Improving LLM Utility Function Robustness and Defining Modularity
+📂Convesation2. Improving LLM Utility Function Robustness and Defining Modularity
 
+----------------------------------
 Tool: ChatGPT, Google Gemini
 Date: 2025-10-14
+----------------------------------
 
 Me: Before we dive into coding, I have a few questions. First, what is the Ollama application, and why would I need to use it? Do you recommend it?
 
@@ -291,4 +293,5 @@ Me: “Should we validate the structure of streamed chunks?”
 AI: “Yes, at least minimal validation prevents KeyError. For example, chunk.get('message', {}).get('content') safely extracts content even if fields are missing. For larger projects, a library like pydantic can enforce schemas.”
 
 Me: “Can we design it so we can mock streaming responses for unit tests?”
+
 AI: “Absolutely. Make the session or requests.post injectable. In tests, you can replace it with a mocked object that yields JSON lines. This enables rigorous edge case testing without hitting a real server.”
