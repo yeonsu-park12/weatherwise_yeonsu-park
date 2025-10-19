@@ -1,7 +1,9 @@
-Conversation5. LLM Persona and Maximising Value Creation 
+📂Conversation5. LLM Persona and Maximising Value Creation 
 
+----------------------------------
 Tool: ChatGPT, Google Gemini
 Date: 2025-10-17
+----------------------------------
 
 Me: I want our LLM to act not just as a passive weather summarizer but as a personalised advisory system. How should we structure the system prompt to enforce that?
 
@@ -215,5 +217,6 @@ Me: This approach now accounts for persona, grounding, domain knowledge, token e
 AI: Correct. It also allows iterative testing, so the system can be refined over time, ensuring consistent, high-quality, actionable advice for the user.
 
 Me: Excellent. I think this conversation fully documents how we transitioned the LLM from a data summarizer to a personalized weather advisor, with all the safeguards, operational rules, and efficiency considerations.
+
 
 AI: Exactly. This is now a research-informed, production-ready approach for actionable weather guidance using LLMs.
