@@ -1,7 +1,7 @@
 # ✍️ Project Reflection
 - Project: WeatherWise Development Process
 - Unit: ISYS5002 Introduction to Programming
-- Name: Yeonsu Park
+- Name: Yeonsu Park - 23319734
 
 ## AI Tools Used
 The most significant obstacle was the challenge of transitioning from basic classroom theory to advanced, practical application. Using APIs and interacting with AI tools, while figuring out their error handling within my AI functions, was demanding, and tracking down bugs consumed a significant amount of my development time. However, this process turned into a critical learning opportunity, allowing me to acquire high-level programming skills, particularly in developing API call functions that adhere to professional standards to ensure stability.
