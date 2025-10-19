@@ -1,7 +1,9 @@
-Convesation3. Exponential Backoff & Non-Retryable Error Handling
+📂Conversation3. Exponential Backoff & Non-Retryable Error Handling
 
+----------------------------------
 Tool: ChatGPT, Google Gemini
 Date: 2025-10-15
+----------------------------------
 
 Me: I want a weather-fetching function that’s very reliable. It should retry temporary network failures, but fail immediately on 404 because that means the location doesn’t exist. Also, I want exponential backoff with jitter to avoid retry storms.
 
@@ -324,3 +326,4 @@ AI: Right. HTTPError is a subclass of RequestException, and every HTTPError carr
 Me: Great. I think this fully satisfies the requirements: robustness, clear retry logic, immediate 404 exit, jitter, exponential backoff, and detailed logging.
 
 AI: Exactly. It’s an elegant, production-ready solution.
+
