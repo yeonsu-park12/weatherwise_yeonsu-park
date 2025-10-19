@@ -1,4 +1,6 @@
 # 🌦️ WeatherWise: Intelligent Weather Analysis & Advisory System
+- Unit: ISYS5002 Introduction to Programming
+- Name: Yeonsu Park - 23319734
 
 ## 🌟 Overview
 **WeatherWise** is a Python application developed as a final project for the course **ISYS5002**.  
