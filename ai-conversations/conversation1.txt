@@ -1,7 +1,7 @@
-Convesation1. API Source Selection and Initial Wrapper Implementation
+**Convesation1. API Source Selection and Initial Wrapper Implementation
 
-Tool: ChatGPT, Google Gemini
-Date: 2025-10-13
+*Tool: ChatGPT, Google Gemini
+*Date: 2025-10-13
 
 Me: I need to choose a real-time weather data source for the WeatherWise project. I have three options: 1) using an existing Python package, 2) directly using wttr.in’s JSON API, or 3) OpenWeatherMap with an API key. I want to show both custom data parsing and API interaction skills. Which option would best satisfy the core requirements and maybe earn some bonus points?
 
@@ -332,5 +332,6 @@ AI: Definitely. Even a 2–3 level snippet showing current_condition and weather
 Me: Perfect. I feel confident moving to Phase 2: LLM utility functions and data processing layers.
 
 AI: Agreed. This conversation now documents your research, design decisions, pseudocode-to-code translation, exception handling, type safety, and extensibility considerations. It shows a strong development mindset.
+
 
 Me: Awesome. Let’s proceed to building robust LLM utilities next.
